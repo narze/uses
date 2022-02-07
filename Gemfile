@@ -47,7 +47,9 @@ gem "bootsnap", require: false
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
-gem "administrate"
+# gem "administrate"
+# Fix conflict with Tailwind on sassc https://github.com/thoughtbot/administrate/issues/2091
+gem "administrate", github: "narze/administrate", branch: "compile-assets"
 gem 'devise'
 
 group :development, :test do
