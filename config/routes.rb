@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
+  devise_for :users
   namespace :admin do
     resources :items
 
     root to: 'items#index'
   end
-  resources :items
+  # resources :items
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
