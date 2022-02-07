@@ -1,19 +1,10 @@
-<h1>Uses</h1>
+<h1 class="text-xl">Uses</h1>
 <p>List things I use.</p>
 
 <ul>
   <% @items.each do |item| %>
-    <li>
+    <li class="px-2 py-1">
       <%= render partial: "item", locals: { item: item } %>
     </li>
   <% end %>
 </ul>
-
-<% if current_user %>
-  <%= link_to "New Item", new_admin_item_path %>
-  <%= button_to "Sign out", destroy_user_session_path,  method: :delete %>
-  <% else %>
-  <%= link_to "Sign in", new_user_session_path %>
-  <% end %>
-
-
