@@ -10,6 +10,12 @@
   </head>
 
   <body>
+    <nav>
+      <ul>
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Items", items_path %></li>
+      </ul>
+    </nav>
     <%= yield %>
   </body>
 </html>

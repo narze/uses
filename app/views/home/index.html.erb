@@ -1,2 +1,12 @@
 <h1>Uses</h1>
 <p>List things I use.</p>
+
+<ul>
+  <% @items.each do |item| %>
+    <li>
+      <%= render partial: "item", locals: { item: item } %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "New Item", new_item_path %>
