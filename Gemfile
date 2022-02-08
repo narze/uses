@@ -51,6 +51,7 @@ gem "bootsnap", require: false
 # Fix conflict with Tailwind on sassc https://github.com/thoughtbot/administrate/issues/2091
 gem "administrate", github: "narze/administrate", branch: "compile-assets"
 gem 'devise'
+gem "jsbundling-rails"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -75,4 +76,4 @@ group :test do
   gem "webdrivers"
 end
 
-gem "tailwindcss-rails", "~> 2.0"
+# gem "tailwindcss-rails", "~> 2.0"
